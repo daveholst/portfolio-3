@@ -5,6 +5,7 @@
         { pageName: '.about', route: '/about', currentlyOn: false },
         { pageName: '.skills', route: '/skills', currentlyOn: false },
         { pageName: '.projects', route: '/projects', currentlyOn: false },
+        { pageName: '.cv', route: '/projects', currentlyOn: false },
         { pageName: '.contact', route: '/contact', currentlyOn: false },
     ]
     page.subscribe(pageInfo => {
@@ -28,6 +29,7 @@
         box-sizing: border-box;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-end;
         padding: var(--space-s);
     }

@@ -4,6 +4,10 @@
 <slot />
 
 <style>
+    :global(body) {
+        margin: 0;
+        padding: 0;
+    }
     /* Global Tokens */
     :root {
         --colors-black: #000;

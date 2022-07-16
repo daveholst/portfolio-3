@@ -22,10 +22,6 @@
 </div>
 
 <style>
-    :global(body) {
-        margin: 0;
-        padding: 0;
-    }
     .root-container {
         display: flex;
         align-items: center;
