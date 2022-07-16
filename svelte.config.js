@@ -1,6 +1,6 @@
 // import adapter from '@sveltejs/adapter-auto'
 import preprocess from 'svelte-preprocess'
-import adapter from 'svelte-adapter-github';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
