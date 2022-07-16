@@ -1,69 +1,39 @@
+name: Build and Deploy to Pages
+
+on:
+  push:
+    branches: ['main']
+
 jobs:
-  on:
-    push:
-      branches:
-        - main # Set a branch name to trigger deployment
-    pull_request:
-
   build:
-    # We're running on ubuntu-latest, nothing special
     runs-on: ubuntu-latest
+
     steps:
-      # As usual, we simply checkout the project
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      # # This action is provided by Cypress. It installs node and the NPM
-      # # dependencies, and caches them.
-      # - name: Cypress install
-      #   uses: cypress-io/github-action@v2
-      #   with:
-      #     # NOTE: we don't actually run tests here!
-      #     runTests: false
-
-      # Now we run our lints. This is the place where you could run other tests
-      # unrelated to cypress (e.g.: unit tests).
-      - name: Run lints
-        run: npm run lint
-
-      # Now we're building the svelte site.
-      # This step generates a build/ directory.
-      - name: Build site
-        run: npm run build
-
-      # And lastly, we upload the generated build/ folder as artifact so we can
-      # use it in later steps.
-      - name: Upload build and .svelte-kit folder
-        uses: actions/upload-artifact@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v3
         with:
           name: build
-          if-no-files-found: error
-          path: build
+          path: build/
 
   deploy:
-    # Only run if merged to main.
-    # if: github.ref == 'refs/heads/main'
-    # Only deploy if all tests passed.
-    # needs: [build, test]
-    needs: [build]
-
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
-      # No need to checkout the project, since all we need is to download the
-      # build artifact from the build step.
-      - uses: actions/download-artifact@v2
+      - uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+      - run: rm -rf *
+      - uses: actions/download-artifact@v3
         with:
           name: build
-          path: build
-
-      # This seems to be the simplest way to publish to a separate branch.
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: EndBug/add-and-commit@v9.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./build
-          # Optional. This will create a CNAME file so GitHub Pages serves it
-          # under this domain.
-          # cname: www.dropzone.de
+          default_author: github_actions
+          message: Deployment
