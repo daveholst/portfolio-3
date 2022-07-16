@@ -1,4 +1,10 @@
 jobs:
+  on:
+    push:
+      branches:
+        - main # Set a branch name to trigger deployment
+    pull_request:
+
   build:
     # We're running on ubuntu-latest, nothing special
     runs-on: ubuntu-latest
@@ -36,7 +42,7 @@ jobs:
 
   deploy:
     # Only run if merged to main.
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     # Only deploy if all tests passed.
     # needs: [build, test]
     needs: [build]
