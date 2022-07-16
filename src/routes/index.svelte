@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     import NavBar from 'src/components/NavBar/NavBar.svelte'
 
     // import NavBar from 'src/components/NavBar/NavBar.svelte'

@@ -1,12 +1,12 @@
-<script lang="typescript">
+<script lang="ts">
     import { page } from '$app/stores'
     const pageStates = [
         { pageName: '.home', route: '/', currentlyOn: false },
         { pageName: '.about', route: '/about', currentlyOn: false },
-        { pageName: '.skills', route: '/skills', currentlyOn: false },
-        { pageName: '.projects', route: '/projects', currentlyOn: false },
-        { pageName: '.cv', route: '/projects', currentlyOn: false },
-        { pageName: '.contact', route: '/contact', currentlyOn: false },
+        { pageName: '.skills', route: '/', currentlyOn: false },
+        { pageName: '.projects', route: '/', currentlyOn: false },
+        { pageName: '.cv', route: '/', currentlyOn: false },
+        { pageName: '.contact', route: '/', currentlyOn: false },
     ]
     page.subscribe(pageInfo => {
         pageStates.forEach(
