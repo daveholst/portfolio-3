@@ -2,8 +2,8 @@
     import { page } from '$app/stores'
     const pageStates = [
         { pageName: '.home', route: '/', currentlyOn: false },
+        { pageName: '.skills', route: '/skills', currentlyOn: false },
         { pageName: '.about', route: '/about', currentlyOn: false },
-        { pageName: '.skills', route: '/', currentlyOn: false },
         { pageName: '.projects', route: '/', currentlyOn: false },
         { pageName: '.cv', route: '/', currentlyOn: false },
         { pageName: '.contact', route: '/', currentlyOn: false },
@@ -41,7 +41,21 @@
         font-weight: 400;
         color: var(--colors-white);
     }
+
+    @media only screen and (max-width: 450px) {
+        .link {
+            margin: 3px;
+        }
+        .navbar-container {
+            justify-content: center;
+        }
+    }
+
+    .link:hover {
+        text-decoration: overline var(--colors-pink);
+    }
     .active-link {
         color: var(--colors-pink);
+        text-decoration: overline var(--colors-pink);
     }
 </style>

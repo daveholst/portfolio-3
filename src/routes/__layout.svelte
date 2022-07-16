@@ -4,9 +4,19 @@
 <slot />
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
     :global(body) {
         margin: 0;
         padding: 0;
+    }
+    :global(p) {
+        max-width: 700px;
+        margin: var(--space-m) var(--space-lg);
+        font-family: var(--fonts-mono);
+        font-size: var(--fontSize-sm);
+        font-weight: 100;
+        line-height: 30px;
+        color: var(--colors-white);
     }
     /* Global Tokens */
     :root {
@@ -27,6 +37,7 @@
         --fontSizes-sm: 1.25rem;
 
         --fonts-sans: Arial, Helvetica, sans-serif;
-        --fonts-mono: Söhne Mono, menlo, monospace;
+        --fonts-serif: 'Times New Roman', Times, serif;
+        --fonts-mono: 'Fira Code', monospace;
     }
 </style>

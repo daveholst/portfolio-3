@@ -41,7 +41,7 @@
     }
 
     hr {
-        margin-left: 0;
+        margin: 0;
         width: 0%;
         transition: width 2s ease-out;
     }
