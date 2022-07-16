@@ -1,4 +1,8 @@
-<script lang="ts">
+<script lang="typescript">
+    import NavBar from 'src/components/NavBar/NavBar.svelte'
+
+    // import NavBar from 'src/components/NavBar/NavBar.svelte'
+
     let growHr = false
 
     setTimeout(() => {
@@ -8,6 +12,7 @@
     }, 250)
 </script>
 
+<NavBar />
 <div class="root-container">
     <div class="hero-container">
         <hr class:grow-hr={growHr} />
