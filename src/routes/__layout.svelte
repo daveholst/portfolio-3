@@ -4,7 +4,6 @@
 <slot />
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
     :global(body) {
         margin: 0;
         padding: 0;
