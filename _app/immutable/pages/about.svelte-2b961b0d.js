@@ -1,4 +1,4 @@
-import{S as P,i as C,s as F,x as N,a as u,l as h,u as x,y as T,c as y,m as g,p as v,v as $,h as c,K as U,q as i,z as W,b as M,J as n,n as j,f as z,t as B,C as G}from"../chunks/index-c58eb361.js";import{N as J}from"../chunks/NavBar-d75123c6.js";function K(S){let s,d,t,o,A,f,l,k,w,r,_,b,m,I,p;return s=new J({}),{c(){N(s.$$.fragment),d=u(),t=h("div"),o=h("img"),f=u(),l=h("p"),k=x(`I'm a 32 years old country kid with a passion for technology and the
+import{S as P,i as C,s as F,x as N,k as u,e as h,t as x,y as T,m as y,c as g,a as v,h as $,d as c,K as U,b as i,z as W,g as S,J as n,n as j,r as z,p as B,C as G}from"../chunks/index-a1628edd.js";import{N as J}from"../chunks/NavBar-0026f8bb.js";function K(q){let s,d,t,o,A,f,l,k,w,r,_,b,m,I,p;return s=new J({}),{c(){N(s.$$.fragment),d=u(),t=h("div"),o=h("img"),f=u(),l=h("p"),k=x(`I'm a 32 years old country kid with a passion for technology and the
         outdoors. I like to spend my time camping, hiking, kite-surfing,
         fishing, diving and doing multi-day motorbike expeditions out in the
         desert. I've always been a tinkerer, pulling things apart to see how
@@ -25,7 +25,7 @@ import{S as P,i as C,s as F,x as N,a as u,l as h,u as x,y as T,c as y,m as g,p a
         through back-end systems running on a server in my shed. I hit the
         limits of what I could do with my lacking programming knowledge. As a
         result, through my studies at UWA and self-learning, I am happy to now
-        call myself a Full Stack Developer.`),E.forEach(c),b=y(a),m=g(a,"P",{class:!0});var q=v(m);I=$(q,`I have previously worked as a Design & Technology teacher and have a
+        call myself a Full Stack Developer.`),E.forEach(c),b=y(a),m=g(a,"P",{class:!0});var M=v(m);I=$(M,`I have previously worked as a Design & Technology teacher and have a
         Diploma in Mechanical Engineering. I am well versed at creating and
         making and now have the skills to apply my problem solving abilities to
-        a new context.`),q.forEach(c),a.forEach(c),this.h()},h(){U(o.src,A="/images/headshotSml.jpeg")||i(o,"src",A),i(o,"alt","author headshot"),i(o,"class","svelte-mg4mmp"),i(l,"class","svelte-mg4mmp"),i(r,"class","svelte-mg4mmp"),i(m,"class","svelte-mg4mmp"),i(t,"class","root-container svelte-mg4mmp")},m(e,a){W(s,e,a),M(e,d,a),M(e,t,a),n(t,o),n(t,f),n(t,l),n(l,k),n(t,w),n(t,r),n(r,_),n(t,b),n(t,m),n(m,I),p=!0},p:j,i(e){p||(z(s.$$.fragment,e),p=!0)},o(e){B(s.$$.fragment,e),p=!1},d(e){G(s,e),e&&c(d),e&&c(t)}}}class L extends P{constructor(s){super(),C(this,s,null,K,F,{})}}export{L as default};
+        a new context.`),M.forEach(c),a.forEach(c),this.h()},h(){U(o.src,A="/images/headshotSml.jpeg")||i(o,"src",A),i(o,"alt","author headshot"),i(o,"class","svelte-mg4mmp"),i(l,"class","svelte-mg4mmp"),i(r,"class","svelte-mg4mmp"),i(m,"class","svelte-mg4mmp"),i(t,"class","root-container svelte-mg4mmp")},m(e,a){W(s,e,a),S(e,d,a),S(e,t,a),n(t,o),n(t,f),n(t,l),n(l,k),n(t,w),n(t,r),n(r,_),n(t,b),n(t,m),n(m,I),p=!0},p:j,i(e){p||(z(s.$$.fragment,e),p=!0)},o(e){B(s.$$.fragment,e),p=!1},d(e){G(s,e),e&&c(d),e&&c(t)}}}class L extends P{constructor(s){super(),C(this,s,null,K,F,{})}}export{L as default};
