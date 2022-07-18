@@ -30,10 +30,11 @@
         --space-ml: 24px;
         --space-lg: 32px;
 
-        --fontSizes-xl: 2.875rem;
-        --fontSizes-lg: 1.9rem;
-        --fontSizes-md: 1.75rem;
+        --fontSizes-xs: 1.1rem;
         --fontSizes-sm: 1.25rem;
+        --fontSizes-md: 1.75rem;
+        --fontSizes-lg: 1.9rem;
+        --fontSizes-xl: 2.875rem;
 
         --fonts-sans: Arial, Helvetica, sans-serif;
         --fonts-serif: 'Times New Roman', Times, serif;

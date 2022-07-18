@@ -1,14 +1,9 @@
 <script lang="ts">
     import NavBar from 'src/components/NavBar/NavBar.svelte'
-
-    // import NavBar from 'src/components/NavBar/NavBar.svelte'
-
     let growHr = false
 
     setTimeout(() => {
-        console.log('first', growHr)
         growHr = true
-        console.log('second', growHr)
     }, 250)
 </script>
 

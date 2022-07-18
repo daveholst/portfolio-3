@@ -13,8 +13,8 @@
         </p>
         <Heading title={'frontend.'} />
         <p>
-            React, Remix, Svelte, SvelteKit, Express, handlebars, Bulma,
-            bootstrap
+            React, Remix, Svelte, SvelteKit, Express, handlebars, MaterialUI,
+            Chaklra, Bulma, bootstrap
         </p>
         <Heading title={'backend.'} />
         <p>
@@ -22,20 +22,25 @@
             mongoose,
         </p>
         <Heading title={'databases.'} />
-        <p>React, Express, handlebars, Bulma, bootstrap</p>
+        <p>
+            MySQL, PostgreSQL, DynamoDB, MongoDB, Knex.js, Sequelize, mongoose,
+        </p>
         <Heading title={'devops.'} />
         <p>
-            GitHub actions, GitHub Runners, Docker, Linux admin, Digital Ocean,
-            Netlify, Heroku
+            Pulumi, GitHub Actions, GitHub Runners, Docker, Linux Sysadmin,
+            Digital Ocean, Netlify, Heroku
         </p>
         <Heading title={'tooling.'} />
-        <p>git</p>
+        <p>
+            Nx, vite, esBuild, Webpack, jest, vitest, puppeteer, Playwright, git
+        </p>
         <Heading title={'iot.'} />
-        <p>Arduino C++, esp micro-controllers, mqtt, websockets, electronics</p>
+        <p>Arduino C++, ESP micro-controllers, MQTT, Websockets, Electronics</p>
         <Heading title={'paradigms.'} />
         <p>
-            Single Table DynamoDB, TDD with Jest, REST API's, MVC, Agile
-            Development, Working Backwards
+            Monorepos, Infrastructure as Code, Containerisation and
+            Virtualisation, Single Table Design, Serverless, TDD, REST, MVC,
+            Agile Development, Working Backwards
         </p>
         <Heading title={'other.'} />
         <p>
@@ -47,7 +52,6 @@
 
 <style>
     .root-container {
-        /* width: 100%; */
         min-height: 100vh;
         padding-top: 100px;
         display: flex;
