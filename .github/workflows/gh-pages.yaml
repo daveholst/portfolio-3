@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-      - run: npm ci
-      - run: npm run build
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm run build
       - uses: actions/upload-artifact@v3
         with:
           name: build
