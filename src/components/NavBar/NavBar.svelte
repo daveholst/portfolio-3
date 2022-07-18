@@ -4,8 +4,12 @@
         { pageName: '.home', route: '/', currentlyOn: false },
         { pageName: '.skills', route: '/skills', currentlyOn: false },
         { pageName: '.about', route: '/about', currentlyOn: false },
-        { pageName: '.projects', route: '/', currentlyOn: false },
-        { pageName: '.cv', route: '/', currentlyOn: false },
+        { pageName: '.projects', route: '/projects', currentlyOn: false },
+        {
+            pageName: '.cv',
+            route: 'https://docs.google.com/document/d/1q5_PXuCAqPiteqWMavtxkzISBhanCc1E7xg7F6MHcOk/export?format=pdf',
+            currentlyOn: false,
+        },
         { pageName: '.contact', route: '/', currentlyOn: false },
     ]
     page.subscribe(pageInfo => {
