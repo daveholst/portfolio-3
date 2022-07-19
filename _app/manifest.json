@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-5c088e7a.js",
+    "file": "immutable/start-697ae85c.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -77,7 +77,7 @@
     ]
   },
   "src/routes/projects.svelte": {
-    "file": "immutable/pages/projects.svelte-3b55bd95.js",
+    "file": "immutable/pages/projects.svelte-444bd9d1.js",
     "src": "src/routes/projects.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -141,13 +141,13 @@
     "file": "immutable/assets/NavBar-ec6e9d12.css",
     "src": "NavBar.css"
   },
-  "src/routes/index.css": {
-    "file": "immutable/assets/index-2dd0407e.css",
-    "src": "src/routes/index.css"
-  },
   "src/routes/projects.css": {
     "file": "immutable/assets/projects-db2081d2.css",
     "src": "src/routes/projects.css"
+  },
+  "src/routes/index.css": {
+    "file": "immutable/assets/index-2dd0407e.css",
+    "src": "src/routes/index.css"
   },
   "Heading.css": {
     "file": "immutable/assets/Heading-4962d9d7.css",
