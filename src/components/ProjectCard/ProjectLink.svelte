@@ -7,11 +7,10 @@
 <div class="links-container">
     {#if live}
         <a href={live}>live-deploy.</a>
-    {:else}
-        <a href="/contact">contact-for-demo.</a>
     {/if}
-
-    <a href={github}>github.</a>
+    {#if github}
+        <a href={github}>github.</a>
+    {/if}
     {#if video}
         <a href={video}>video-demonstration.</a>
     {/if}
