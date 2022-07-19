@@ -44,7 +44,7 @@
     }
 
     img {
-        padding: 0 var(--space-m);
+        padding: 0 var(--space-md);
         width: 300px;
         border-left: solid 2px white;
         border-right: solid 2px white;

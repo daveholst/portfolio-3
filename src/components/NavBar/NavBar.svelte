@@ -35,13 +35,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        padding: var(--space-s);
+        padding: var(--space-sm);
     }
     .link {
         margin: var(--space-xs);
         text-decoration: none;
         font-family: var(--fonts-sans);
-        font-size: var(--fontSizes-sm);
+        font-size: var(--fontsize-sm);
         font-weight: 400;
         color: var(--colors-white);
     }

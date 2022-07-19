@@ -48,10 +48,10 @@
     h1 {
         margin: 0;
         padding-top: var(--space-xs);
-        font-size: var(--fontSizes-lg);
+        font-size: var(--fontsize-lg);
     }
 
     span {
-        font-size: var(--fontSizes-lg);
+        font-size: var(--fontsize-lg);
     }
 </style>

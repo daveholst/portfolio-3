@@ -18,7 +18,7 @@
 <style>
     .heading-container {
         max-width: 350px;
-        margin-left: var(--space-m);
+        margin-left: var(--space-md);
         display: flex;
         flex-direction: column;
         font-family: var(--fonts-sans);
@@ -35,6 +35,6 @@
     h2 {
         margin: 0;
         padding-top: var(--space-xs);
-        font-size: var(--fontSizes-md);
+        font-size: var(--fontsize-md);
     }
 </style>

@@ -18,7 +18,7 @@
 
 <style>
     .links-container {
-        margin: var(--space-m) var(--space-lg) var(--space-lg);
+        margin: var(--space-md) var(--space-lg) var(--space-lg);
     }
 
     a {
@@ -26,7 +26,7 @@
         text-decoration: none;
         font-family: var(--fonts-mono);
         color: var(--colors-white);
-        font-size: var(--fontSizes-xs);
+        font-size: var(--fontsize-xs);
         font-weight: 500;
     }
 
