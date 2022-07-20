@@ -62,4 +62,7 @@
     p:first-of-type {
         margin-top: 100px;
     }
+    p:last-of-type {
+        margin-bottom: 60px;
+    }
 </style>
