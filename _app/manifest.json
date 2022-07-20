@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-3112c5f6.js",
+    "file": "immutable/start-1d397748.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -145,9 +145,9 @@
     "file": "immutable/assets/__layout-733607b3.css",
     "src": "src/routes/__layout.css"
   },
-  "src/routes/contact.css": {
-    "file": "immutable/assets/contact-eb2c671c.css",
-    "src": "src/routes/contact.css"
+  "src/routes/cv.css": {
+    "file": "immutable/assets/cv-6bfabd79.css",
+    "src": "src/routes/cv.css"
   },
   "src/routes/about.css": {
     "file": "immutable/assets/about-753fc48b.css",
@@ -157,21 +157,21 @@
     "file": "immutable/assets/NavBar-c2f1c7dc.css",
     "src": "NavBar.css"
   },
-  "src/routes/cv.css": {
-    "file": "immutable/assets/cv-6bfabd79.css",
-    "src": "src/routes/cv.css"
+  "src/routes/contact.css": {
+    "file": "immutable/assets/contact-eb2c671c.css",
+    "src": "src/routes/contact.css"
   },
   "Heading.css": {
     "file": "immutable/assets/Heading-84973ee6.css",
     "src": "Heading.css"
   },
-  "src/routes/index.css": {
-    "file": "immutable/assets/index-123bea9e.css",
-    "src": "src/routes/index.css"
-  },
   "src/routes/projects.css": {
     "file": "immutable/assets/projects-a5fa2639.css",
     "src": "src/routes/projects.css"
+  },
+  "src/routes/index.css": {
+    "file": "immutable/assets/index-123bea9e.css",
+    "src": "src/routes/index.css"
   },
   "src/routes/skills.css": {
     "file": "immutable/assets/skills-9956ae9b.css",
