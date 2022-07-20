@@ -68,7 +68,7 @@ export const projects: Project[] = [
     {
         title: 'lawn manager.',
         description: [
-            'lawman is a lawn and garden management hardware & software solution that uses the technique of fertigation to deliver fertiliser to lawns and garden beds via existing reticulation systems. This was my final project for my bootcamp and is currently in a state of heavy refactoring.',
+            'lawn manager is a lawn and garden management hardware & software solution that uses the technique of fertigation to deliver fertiliser to lawns and garden beds via existing reticulation systems. This was my final project for my bootcamp and is currently in a state of heavy refactoring.',
             'I have moved the project to a more commercial serverless model by breaking systems into individual microservices with a focus on building out strong admin & direct control tools. This will allow me to build a robust backend that functions in a slightly clunky way while I rethink the frontend app. The above experiments in Svelte and Remix are helping my choose the path for this phase! I hope to get this to a stage where I can share it with the Home Assistant OSS community',
         ],
         stack: [
@@ -93,7 +93,7 @@ export const projects: Project[] = [
         title: 'juicebox.',
         description: [
             'juicebox is the hardware component for lawn manager that controls the fertigation system. It is comprised of an ESP32 micro-controller connected to a range of relays, load cells and sensors to manage the state of the fertiliser system. It is controlled via MQTT with a Mosquito server running in a container on a DigitalOcean Ubuntu VPS.',
-            " Lawn manager itself can communicate with the device via mqtt. Experiments were done with websockets and a REST API, but mqtt was the most reliable with the least overhead and offers sound 2-way traffic. A containerised mqttBridge microservice sits alongside the Mosquito server and relays all mqtt messages to an SNS topic so that event driven serverless microservices can be invoked. This is currently being used in a feed channel to 'soft-log' mqtt traffic.",
+            "Lawn manager itself can communicate with the device via mqtt. Experiments were done with websockets and a REST API, but mqtt was the most reliable with the least overhead and offers sound 2-way traffic. A containerised mqttBridge microservice sits alongside the Mosquito server and relays all mqtt messages to an SNS topic so that event driven serverless microservices can be invoked. This is currently being used in a feed channel to 'soft-log' mqtt traffic.",
         ],
         stack: [
             'arduino c++',

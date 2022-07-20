@@ -27,9 +27,11 @@
         automate my entire house using a mix of open-source, self designed and
         commercial products. All these devices become compatible with each other
         through back-end systems running on a server in my shed. I hit the
-        limits of what I could do with my lacking programming knowledge. As a
-        result, through my studies at UWA and self-learning, I am happy to now
-        call myself a Full Stack Developer.
+        ceiling of what I could achieve with no programming knowledge and I
+        started learning from courses online. I had found my passion and how I
+        wanted to spend the rest of my working life. This prompted me to enroll
+        in a bootcamp at UWA and continue my self-learning in parallel and I
+        haven't stopped learning since.
     </p>
     <p>
         I have previously worked as a Teacher with degrees in both Design and
