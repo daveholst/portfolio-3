@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-0f0930ad.js",
+    "file": "immutable/start-a89f3ec7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -39,7 +39,7 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "immutable/pages/about.svelte-ac197430.js",
+    "file": "immutable/pages/about.svelte-b2a3ae88.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -93,7 +93,7 @@
     ]
   },
   "src/routes/projects.svelte": {
-    "file": "immutable/pages/projects.svelte-d13bb8cb.js",
+    "file": "immutable/pages/projects.svelte-3e09017f.js",
     "src": "src/routes/projects.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -145,6 +145,10 @@
     "file": "immutable/assets/__layout-733607b3.css",
     "src": "src/routes/__layout.css"
   },
+  "Heading.css": {
+    "file": "immutable/assets/Heading-84973ee6.css",
+    "src": "Heading.css"
+  },
   "src/routes/about.css": {
     "file": "immutable/assets/about-72767914.css",
     "src": "src/routes/about.css"
@@ -156,10 +160,6 @@
   "src/routes/contact.css": {
     "file": "immutable/assets/contact-eb2c671c.css",
     "src": "src/routes/contact.css"
-  },
-  "Heading.css": {
-    "file": "immutable/assets/Heading-84973ee6.css",
-    "src": "Heading.css"
   },
   "src/routes/index.css": {
     "file": "immutable/assets/index-123bea9e.css",

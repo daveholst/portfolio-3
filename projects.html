@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <title>daveholst.dev | portfolio</title>
-        <link rel="icon" href="./favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <link rel="preload" as="image" href='images/headshot-sml.jpeg' />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +17,10 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/projects-a5fa2639.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/NavBar-c2f1c7dc.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Heading-84973ee6.css">
-	<link rel="modulepreload" href="/_app/immutable/start-0f0930ad.js">
+	<link rel="modulepreload" href="/_app/immutable/start-a89f3ec7.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-a1628edd.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-82c4097c.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/projects.svelte-d13bb8cb.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/projects.svelte-3e09017f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/NavBar-4362a3ff.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Heading-454d6e73.js">
     </head>
@@ -70,7 +73,7 @@
     <h2 class="svelte-pjiclu">lawn manager.</h2>
 </div>
 <p><span class="stack-heading svelte-1a2rtbn">description::</span>
-            <span>lawman is a lawn and garden management hardware &amp; software solution that uses the technique of fertigation to deliver fertiliser to lawns and garden beds via existing reticulation systems. This was my final project for my bootcamp and is currently in a state of heavy refactoring.</span>
+            <span>lawn manager is a lawn and garden management hardware &amp; software solution that uses the technique of fertigation to deliver fertiliser to lawns and garden beds via existing reticulation systems. This was my final project for my bootcamp and is currently in a state of heavy refactoring.</span>
     </p><p>I have moved the project to a more commercial serverless model by breaking systems into individual microservices with a focus on building out strong admin &amp; direct control tools. This will allow me to build a robust backend that functions in a slightly clunky way while I rethink the frontend app. The above experiments in Svelte and Remix are helping my choose the path for this phase! I hope to get this to a stage where I can share it with the Home Assistant OSS community
     </p>
 <p><span class="stack-heading svelte-1a2rtbn">stack::</span>
@@ -84,7 +87,7 @@
 </div>
 <p><span class="stack-heading svelte-1a2rtbn">description::</span>
             <span>juicebox is the hardware component for lawn manager that controls the fertigation system. It is comprised of an ESP32 micro-controller connected to a range of relays, load cells and sensors to manage the state of the fertiliser system. It is controlled via MQTT with a Mosquito server running in a container on a DigitalOcean Ubuntu VPS.</span>
-    </p><p> Lawn manager itself can communicate with the device via mqtt. Experiments were done with websockets and a REST API, but mqtt was the most reliable with the least overhead and offers sound 2-way traffic. A containerised mqttBridge microservice sits alongside the Mosquito server and relays all mqtt messages to an SNS topic so that event driven serverless microservices can be invoked. This is currently being used in a feed channel to 'soft-log' mqtt traffic.
+    </p><p>Lawn manager itself can communicate with the device via mqtt. Experiments were done with websockets and a REST API, but mqtt was the most reliable with the least overhead and offers sound 2-way traffic. A containerised mqttBridge microservice sits alongside the Mosquito server and relays all mqtt messages to an SNS topic so that event driven serverless microservices can be invoked. This is currently being used in a feed channel to 'soft-log' mqtt traffic.
     </p>
 <p><span class="stack-heading svelte-1a2rtbn">stack::</span>
     <span>arduino c++, platformIO, MQTT, ESP-32, Mosquito, Docker &amp; SNS</span></p>
@@ -96,10 +99,10 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="cjx2nm">
-		import { start } from "/_app/immutable/start-0f0930ad.js";
+		<script type="module" data-sveltekit-hydrate="1vdu7kd">
+		import { start } from "/_app/immutable/start-a89f3ec7.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="cjx2nm"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1vdu7kd"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
