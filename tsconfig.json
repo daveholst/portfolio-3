@@ -14,6 +14,6 @@
         "$types/*": ["src/types/*"],
         "$lib/*": ["src/lib/*"],
         "$components/*": ["src/components/*"],
-        "$images/*": ["src/assets/images/"]
+        "$images/*": ["static/images/"]
       }
 }
