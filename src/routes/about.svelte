@@ -1,10 +1,11 @@
 <script lang="ts">
     import NavBar from 'src/components/NavBar/NavBar.svelte'
+    import headShot from 'src/assets/images/headshot-sml.jpeg'
 </script>
 
 <NavBar />
 <div class="root-container">
-    <img src="/images/headshot-sml.jpeg" alt="author headshot" />
+    <img src={headShot} alt="author headshot" />
     <p>
         I'm a country kid with a passion for technology and the outdoors. I like
         to spend my time camping, hiking, kite-surfing, fishing, diving and
