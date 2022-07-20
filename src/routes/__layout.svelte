@@ -11,7 +11,7 @@
     }
     :global(p) {
         max-width: 700px;
-        margin: var(space-md) var(--space-lg);
+        margin: var(--space-md) var(--space-lg);
         font-family: var(--fonts-mono);
         font-size: var(--fontSize-sm);
         font-weight: 100;

@@ -5,11 +5,13 @@
 
 <NavBar />
 <div class="root-container">
-    <div class="contact-container">
-        <Heading title={'contact.'} />
-        <a href="mailto:contact@daveholst.dev">email.</a>
-        <a href="https://github.com/daveholst">github.</a>
-        <a href="https://www.linkedin.com/in/daveholst/">linkedin.</a>
+    <div class="cv-container">
+        <Heading title={'cv.'} />
+        <a
+            href="https://docs.google.com/document/d/1q5_PXuCAqPiteqWMavtxkzISBhanCc1E7xg7F6MHcOk/export?format=pdf"
+            >download cv.</a
+        >
+        <a href="/contact">contact for references.</a>
     </div>
 </div>
 
@@ -24,7 +26,7 @@
         color: white;
     }
 
-    .contact-container {
+    .cv-container {
         display: flex;
         flex-direction: column;
         width: 330px;

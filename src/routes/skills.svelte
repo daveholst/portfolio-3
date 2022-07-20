@@ -8,7 +8,7 @@
     <div class="skills-container">
         <Heading title={'languages.'} />
         <p>
-            TypeScript, JavaScript, CSS 3, HTML 5, SQL, Arduino C++, YAML, Basic
+            TypeScript, JavaScript, CSS 3, HTML 5, SQL, Arduino C++, YAML,
             Python
         </p>
         <Heading title={'frontend.'} />
@@ -19,7 +19,7 @@
         <Heading title={'backend.'} />
         <p>
             node.js, Express, Fastify, mySQL, mongoDB, SQLite, Sequelize,
-            mongoose,
+            mongoose, aws-sdk
         </p>
         <Heading title={'databases.'} />
         <p>
