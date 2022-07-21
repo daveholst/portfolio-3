@@ -20,6 +20,7 @@ export const projects: Project[] = [
             'Nx',
             'TypeScript',
             'React',
+            'Redux',
             'Emotion',
             'Chakra',
             'Express',

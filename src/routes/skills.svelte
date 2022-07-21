@@ -13,14 +13,11 @@
         </p>
         <Heading title={'frontend.'} />
         <p>
-            React, Remix, Svelte, SvelteKit, Express, handlebars, MaterialUI,
-            Chaklra, Bulma, bootstrap
+            React, Remix, Svelte, SvelteKit, Express, handlebars, Redux,
+            MaterialUI, Chaklra, Bulma, bootstrap
         </p>
         <Heading title={'backend.'} />
-        <p>
-            node.js, Express, Fastify, mySQL, mongoDB, SQLite, Sequelize,
-            mongoose, aws-sdk
-        </p>
+        <p>node.js, Express, Fastify, aws-sdk, graphQL, REST apis</p>
         <Heading title={'databases.'} />
         <p>
             MySQL, PostgreSQL, DynamoDB, MongoDB, Knex.js, Sequelize, mongoose,
