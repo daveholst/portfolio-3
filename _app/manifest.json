@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-bc7fa371.js",
+    "file": "immutable/start-6e22dc18.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -52,7 +52,7 @@
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "immutable/pages/contact.svelte-943e5d18.js",
+    "file": "immutable/pages/contact.svelte-7e37596c.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -62,11 +62,11 @@
       "_NavBar-4362a3ff.js"
     ],
     "css": [
-      "immutable/assets/contact-eb2c671c.css"
+      "immutable/assets/contact-b48bdb21.css"
     ]
   },
   "src/routes/cv.svelte": {
-    "file": "immutable/pages/cv.svelte-a4c9ae9f.js",
+    "file": "immutable/pages/cv.svelte-37c40c42.js",
     "src": "src/routes/cv.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -76,11 +76,11 @@
       "_NavBar-4362a3ff.js"
     ],
     "css": [
-      "immutable/assets/cv-6bfabd79.css"
+      "immutable/assets/cv-e16e0fc3.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-bd652f95.js",
+    "file": "immutable/pages/index.svelte-7cd474dc.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -89,7 +89,7 @@
       "_NavBar-4362a3ff.js"
     ],
     "css": [
-      "immutable/assets/index-123bea9e.css"
+      "immutable/assets/index-e7791c0f.css"
     ]
   },
   "src/routes/projects.svelte": {
@@ -107,7 +107,7 @@
     ]
   },
   "src/routes/skills.svelte": {
-    "file": "immutable/pages/skills.svelte-0c60b4f6.js",
+    "file": "immutable/pages/skills.svelte-2ffacff8.js",
     "src": "src/routes/skills.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -158,15 +158,15 @@
     "src": "NavBar.css"
   },
   "src/routes/contact.css": {
-    "file": "immutable/assets/contact-eb2c671c.css",
+    "file": "immutable/assets/contact-b48bdb21.css",
     "src": "src/routes/contact.css"
   },
   "src/routes/index.css": {
-    "file": "immutable/assets/index-123bea9e.css",
+    "file": "immutable/assets/index-e7791c0f.css",
     "src": "src/routes/index.css"
   },
   "src/routes/cv.css": {
-    "file": "immutable/assets/cv-6bfabd79.css",
+    "file": "immutable/assets/cv-e16e0fc3.css",
     "src": "src/routes/cv.css"
   },
   "src/routes/projects.css": {
