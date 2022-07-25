@@ -8,7 +8,7 @@
     <div class="skills-container">
         <Heading title={'languages.'} />
         <p>
-            TypeScript, JavaScript, CSS 3, HTML 5, SQL, Arduino C++, YAML,
+            TypeScript, JavaScript, CSS 3, HTML 5, SQL, Arduino C++, YAML, Basic
             Python
         </p>
         <Heading title={'frontend.'} />

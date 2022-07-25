@@ -22,8 +22,8 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        background-color: black;
-        color: white;
+        background-color: var(--colors-black);
+        color: var(--colors-white);
     }
 
     .cv-container {
