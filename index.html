@@ -16,15 +16,11 @@
         <!-- LogRocket Monitoring -->
         <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
         <script>window.LogRocket && window.LogRocket.init('kzxwx3/portfolio-3');</script>
-        <meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/immutable/assets/__layout-733607b3.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/index-e7791c0f.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/NavBar-c2f1c7dc.css">
-	<link rel="modulepreload" href="/_app/immutable/start-6e22dc18.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-a1628edd.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-82c4097c.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-7cd474dc.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/NavBar-4362a3ff.js">
+        
+		<link rel="modulepreload" href="/_app/immutable/entry/start.607300be.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.d22ab98f.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.055522ff.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.06f88663.js">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9C6FXTBN1"></script>
         <script>
@@ -36,33 +32,23 @@
     </head>
     <body>
         <div>
+			<script>
+				{
+					__sveltekit_1rxv4wq = {
+						base: "",
+						env: {}
+					};
 
+					const element = document.currentScript.parentElement;
 
-<div class="navbar-container svelte-1hktwh9"><a href="/" class="link svelte-1hktwh9 active-link">.home</a><a href="/projects" class="link svelte-1hktwh9">.projects</a><a href="/skills" class="link svelte-1hktwh9">.skills</a><a href="/about" class="link svelte-1hktwh9">.about</a><a href="/cv" class="link svelte-1hktwh9">.cv</a><a href="/contact" class="link svelte-1hktwh9">.contact</a>
-</div>
-<div class="root-container svelte-u2s14m"><div class="hero-container svelte-u2s14m"><hr class="svelte-u2s14m">
-        <h1 class="svelte-u2s14m">dave holst</h1>
-        <span class="svelte-u2s14m">full stack developer.</span></div>
-</div>
-
-
-		<script type="module" data-sveltekit-hydrate="1cobtnv">
-		import { start } from "/_app/immutable/start-6e22dc18.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1cobtnv"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 5],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script></div>
+					Promise.all([
+						import("/_app/immutable/entry/start.607300be.js"),
+						import("/_app/immutable/entry/app.06f88663.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
     </body>
 </html>
