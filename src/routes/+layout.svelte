@@ -13,7 +13,7 @@
         max-width: 700px;
         margin: var(--space-md) var(--space-lg);
         font-family: var(--fonts-mono);
-        font-size: var(--fontsize-sm);
+        font-size: var(--fontsize-xs);
         font-weight: 100;
         line-height: 30px;
         color: var(--colors-white);
@@ -32,8 +32,8 @@
         --space-lg: 2rem;
         --space-xl: 2.5rem;
 
-        --fontsize-xs: 1.1rem;
-        --fontsize-sm: 1.1rem;
+        --fontsize-xs: 1rem;
+        --fontsize-sm: 1.25rem;
         --fontsize-md: 1.75rem;
         --fontsize-lg: 1.9rem;
         --fontsize-xl: 2.875rem;
