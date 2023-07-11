@@ -13,7 +13,7 @@
         max-width: 700px;
         margin: var(--space-md) var(--space-lg);
         font-family: var(--fonts-mono);
-        font-size: var(--fontSize-sm);
+        font-size: var(--fontsize-xs);
         font-weight: 100;
         line-height: 30px;
         color: var(--colors-white);
@@ -25,13 +25,14 @@
         --colors-sage: #83c5be;
         --colors-pink: #ffb4a2;
 
-        --space-xs: 4px;
-        --space-sm: 8px;
-        --space-md: 16px;
-        --space-ml: 24px;
-        --space-lg: 32px;
+        --space-xs: 0.25rem;
+        --space-sm: 0.5rem;
+        --space-md: 1rem;
+        --space-ml: 1.5rem;
+        --space-lg: 2rem;
+        --space-xl: 2.5rem;
 
-        --fontsize-xs: 1.1rem;
+        --fontsize-xs: 1rem;
         --fontsize-sm: 1.25rem;
         --fontsize-md: 1.75rem;
         --fontsize-lg: 1.9rem;

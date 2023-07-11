@@ -9,12 +9,12 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        title: 'thewest.com.au.',
+        title: 'seven west media.',
         description: [
             'during my day job as a Full Stack Developer at Seven West Media, I primarily work on a collection of both mono and traditional repos that serve thewest.com.au, sevennews.com.au, perthnow.com.au and their supporting publishing pipelines. Our front end is an SSR / SPA hybrid app with a custom JSON layout routing engine for simple modifications to page layouts. Components are shared across all 3 news sites with an Emotion based design token systems to help appropriately style the components.',
 
             'The publishing pipeline has a range of services running on ec2 instances through to event driven serverless microservices running on both regional and lambdas@edge.',
-            'These mastheads and supporting services deliver to over 1m unique users daily. It is an efficient architecture that focus on ephemeral serverless architecture to keep costs down and scale under periods of heavy traffic',
+            'These mastheads and supporting services deliver to over 1m unique users daily. It is an efficient architecture that focus on ephemeral serverless architecture to keep costs down and scale under periods of heavy traffic.',
         ],
         stack: [
             'Nx',

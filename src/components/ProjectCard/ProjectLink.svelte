@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let github: string
+    export let github: string | undefined
     export let live: string | undefined
     export let video: string | undefined
 </script>
@@ -18,6 +18,7 @@
 
 <style>
     .links-container {
+        /* margin: var(--space-md) var(--space-lg) var(--space-lg); */
         margin: var(--space-md) var(--space-lg) var(--space-lg);
     }
 
@@ -27,7 +28,7 @@
         font-family: var(--fonts-mono);
         color: var(--colors-white);
         font-size: var(--fontsize-xs);
-        font-weight: 500;
+        font-weight: 600;
     }
 
     a:hover {
