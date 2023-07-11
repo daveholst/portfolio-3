@@ -1,7 +1,7 @@
 <script lang="ts">
-    import NavBar from 'src/components/NavBar/NavBar.svelte'
-    import ProjectCard from 'src/components/ProjectCard/ProjectCard.svelte'
-    import { projects } from 'src/data/projects'
+    import NavBar from '../../components/NavBar/NavBar.svelte'
+    import ProjectCard from '../../components/ProjectCard/ProjectCard.svelte'
+    import { projects } from '../../data/projects'
 </script>
 
 <NavBar />

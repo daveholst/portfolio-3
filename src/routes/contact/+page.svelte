@@ -1,6 +1,6 @@
 <script>
-    import Heading from 'src/components/Heading/Heading.svelte'
-    import NavBar from 'src/components/NavBar/NavBar.svelte'
+    import Heading from '../../components/Heading/Heading.svelte'
+    import NavBar from '../../components/NavBar/NavBar.svelte'
 </script>
 
 <NavBar />

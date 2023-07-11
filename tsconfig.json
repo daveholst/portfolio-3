@@ -11,9 +11,17 @@
         "strict": true
     },
     "paths": {
-        "$types/*": ["src/types/*"],
-        "$lib/*": ["src/lib/*"],
-        "$components/*": ["src/components/*"],
-        "$images/*": ["static/images/"]
-      }
+        "$types/*": [
+            "src/types/*"
+        ],
+        "$lib/*": [
+            "src/lib/*"
+        ],
+        "$components/*": [
+            "src/components/*"
+        ],
+        "$images/*": [
+            "static/images/"
+        ]
+    }
 }

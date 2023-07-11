@@ -1,5 +1,5 @@
 <script lang="ts">
-    import NavBar from 'src/components/NavBar/NavBar.svelte'
+    import NavBar from '../../components/NavBar/NavBar.svelte'
 </script>
 
 <NavBar />

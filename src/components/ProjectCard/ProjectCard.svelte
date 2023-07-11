@@ -1,8 +1,8 @@
 <script lang="ts">
-    import type { Project } from 'src/data/projects'
     import Heading from '../Heading/Heading.svelte'
     import { buildStackNames } from './utils/buildStackNames'
     import ProjectLink from './ProjectLink.svelte'
+    import type { Project } from '../../data/projects'
 
     export let project: Project
 </script>
