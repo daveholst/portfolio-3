@@ -1,8 +1,6 @@
 <script lang="ts">
-    import NavBar from '../../components/NavBar/NavBar.svelte'
 </script>
 
-<NavBar />
 <div class="root-container">
     <img src="images/headshot-sml.jpeg" alt="author headshot" />
     <p>
