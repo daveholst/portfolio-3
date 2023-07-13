@@ -1,15 +1,24 @@
 <script lang="ts">
-    // export const prerender = true
+    import NavBar from '../components/NavBar/NavBar.svelte'
 </script>
 
-<slot />
+<NavBar />
+<body>
+    <slot />
+</body>
 
 <style>
     :global(body) {
         margin: 0;
         padding: 0;
-        background-color: var(--colors-black);
+        background-color: var(--background-light);
+        transition: background-color 0.3s
     }
+
+    :global(body.dark) {
+        background-color: var(--background-dark);
+    }
+
     :global(p) {
         max-width: 700px;
         margin: var(--space-md) var(--space-lg);
@@ -17,7 +26,11 @@
         font-size: var(--fontsize-xs);
         font-weight: 100;
         line-height: 30px;
-        color: var(--colors-white);
+        color: var(--text-light);
+    }
+
+    :global(p.dark) {
+        color: var(--text-dark)
     }
     /* Global Tokens */
     :root {
@@ -25,6 +38,11 @@
         --colors-white: #fff;
         --colors-sage: #83c5be;
         --colors-pink: #ffb4a2;
+
+        --text-light: var(--colors-black)
+        --text-dark: var(--colors-white)
+        --background-light: var(--colors-white)
+        --background-dark: var(--colors-black)
 
         --space-xs: 0.25rem;
         --space-sm: 0.5rem;

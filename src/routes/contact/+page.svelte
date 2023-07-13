@@ -1,9 +1,7 @@
 <script>
     import Heading from '../../components/Heading/Heading.svelte'
-    import NavBar from '../../components/NavBar/NavBar.svelte'
 </script>
 
-<NavBar />
 <div class="root-container">
     <div class="contact-container">
         <Heading title={'contact.'} />

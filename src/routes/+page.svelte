@@ -1,6 +1,4 @@
 <script lang="ts">
-    import NavBar from '../components/NavBar/NavBar.svelte'
-
     let growHr = false
 
     setTimeout(() => {
@@ -8,11 +6,10 @@
     }, 250)
 </script>
 
-<NavBar />
 <div class="root-container">
     <div class="hero-container">
         <hr class:grow-hr={growHr} />
-        <h1>dave holst</h1>
+        <h1>dave holst </h1>
         <span>full stack developer.</span>
     </div>
 </div>
@@ -24,8 +21,8 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        background-color: var(--colors-black);
-        color: var(--colors-white);
+        /* background-color: var(--colors-black); */
+        /* color: var(--colors-white); */
     }
 
     .hero-container {
@@ -33,7 +30,7 @@
         flex-direction: column;
         width: 330px;
         font-family: var(--fonts-sans);
-        color: var(--colors-white);
+        /* color: var(--colors-white); */
     }
 
     hr {
