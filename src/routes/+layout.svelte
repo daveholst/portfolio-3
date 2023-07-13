@@ -1,5 +1,8 @@
 <script lang="ts">
     import NavBar from '../components/NavBar/NavBar.svelte'
+    // TODO whack a store in here for theme
+    // maybe something like this the OS detection + overwrite + local storage
+    // https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7
 </script>
 
 <NavBar />
