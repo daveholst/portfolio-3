@@ -1,5 +1,11 @@
 <script lang="ts">
+    import { theme } from '../stores/theme'
+
     let growHr = false
+    let isDark: boolean
+    theme.subscribe(value =>
+        value === 'dark' ? (isDark = true) : (isDark = false)
+    )
 
     setTimeout(() => {
         growHr = true
@@ -8,9 +14,9 @@
 
 <div class="root-container">
     <div class="hero-container">
-        <hr class:grow-hr={growHr} />
-        <h1>dave holst </h1>
-        <span>full stack developer.</span>
+        <hr class:grow-hr={growHr} class:dark={isDark} />
+        <h1 class:dark={isDark}>dave holst </h1>
+        <span class:dark={isDark}>full stack developer.</span>
     </div>
 </div>
 
@@ -39,6 +45,10 @@
         transition: width 2s ease-out;
     }
 
+    hr.dark {
+        color: var(--colors-white);
+    }
+
     .grow-hr {
         width: 100%;
     }
@@ -49,7 +59,15 @@
         font-size: var(--fontsize-lg);
     }
 
+    h1.dark {
+        color: var(--colors-white);
+    }
+
     span {
         font-size: var(--fontsize-lg);
+    }
+
+    span.dark {
+        color: var(--colors-white);
     }
 </style>
