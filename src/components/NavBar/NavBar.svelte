@@ -1,7 +1,13 @@
 <script lang="ts">
     import { page } from '$app/stores'
-    export let mode: 'dark' | 'light' = 'light'
-    const changeModeHandler = () => (mode = mode === 'light' ? 'dark' : 'light')
+    import { theme } from '../../stores/theme'
+
+    let currentTheme: 'dark' | 'light'
+    theme.subscribe(value => (currentTheme = value))
+
+    const changeModeHandler = () => {
+        theme.set(currentTheme === 'dark' ? 'light' : 'dark')
+    }
 
     let pageStates = [
         { pageName: '.home', route: '/', currentlyOn: false },
@@ -22,13 +28,19 @@
 <div class="navbar-container">
     <button
         class="link"
+        class:link-dark={currentTheme === 'dark'}
         on:click={changeModeHandler}
         on:keypress={changeModeHandler}
     >
-        {`.${mode}`}
+        {`.${currentTheme}`}
     </button>
     {#each pageStates as ps}
-        <a href={ps.route} class="link" class:active-link={ps.currentlyOn}>
+        <a
+            href={ps.route}
+            class="link"
+            class:active-link={ps.currentlyOn}
+            class:link-dark={currentTheme === 'dark'}
+        >
             {ps.pageName}
         </a>
     {/each}
@@ -50,8 +62,13 @@
         font-family: var(--fonts-sans);
         font-size: var(--fontsize-sm);
         font-weight: 400;
+        color: var(--colors-black);
+    }
+
+    .link-dark {
         color: var(--colors-white);
     }
+
     button.link {
         background: transparent;
         border: 0;

@@ -1,25 +1,33 @@
 <script lang="ts">
     import NavBar from '../components/NavBar/NavBar.svelte'
+    import { theme } from '../stores/theme'
     // TODO whack a store in here for theme
     // maybe something like this the OS detection + overwrite + local storage
     // https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7
+    let isDark: boolean
+    theme.subscribe(value =>
+        value === 'dark' ? (isDark = true) : (isDark = false)
+    )
 </script>
 
 <NavBar />
-<body>
+<body class:dark={isDark}>
     <slot />
 </body>
 
 <style>
-    :global(body) {
+    body {
         margin: 0;
         padding: 0;
         background-color: var(--background-light);
-        transition: background-color 0.3s
+        transition: background-color 0.5s;
     }
 
-    :global(body.dark) {
+    body.dark {
+        /* Seems like a weird bug in here would let me use a CSS variable in here*/
         background-color: var(--background-dark);
+        background-color: #000;
+        transition: background-color 0.5s;
     }
 
     :global(p) {
@@ -33,7 +41,7 @@
     }
 
     :global(p.dark) {
-        color: var(--text-dark)
+        color: var(--text-dark);
     }
     /* Global Tokens */
     :root {
@@ -42,10 +50,10 @@
         --colors-sage: #83c5be;
         --colors-pink: #ffb4a2;
 
-        --text-light: var(--colors-black)
-        --text-dark: var(--colors-white)
-        --background-light: var(--colors-white)
-        --background-dark: var(--colors-black)
+        --text-light: #000;
+        --text-dark: #fff;
+        --background-light: #fff;
+        --background-dark: #000;
 
         --space-xs: 0.25rem;
         --space-sm: 0.5rem;

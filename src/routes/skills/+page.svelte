@@ -1,44 +1,54 @@
-<script>
+<script lang="ts">
     import Heading from '../../components/Heading/Heading.svelte'
+    import { theme } from '../../stores/theme'
+
+    let isDark: boolean
+    theme.subscribe(value =>
+        value === 'dark' ? (isDark = true) : (isDark = false)
+    )
 </script>
 
 <div class="root-container">
     <div class="skills-container">
         <Heading title={'languages.'} />
-        <p>
+        <p class:dark={isDark}>
             TypeScript, JavaScript, CSS 3, HTML 5, SQL, Arduino C++, YAML, Basic
             Python
         </p>
         <Heading title={'frontend.'} />
-        <p>
+        <p class:dark={isDark}>
             React, Remix, Svelte, SvelteKit, Express, handlebars, Redux,
             MaterialUI, Chaklra, Bulma, bootstrap
         </p>
         <Heading title={'backend.'} />
-        <p>node.js, Express, Fastify, aws-sdk, graphQL, REST apis</p>
+        <p class:dark={isDark}>
+            node.js, Express, Fastify, aws-sdk, graphQL, REST apis
+        </p>
         <Heading title={'databases.'} />
-        <p>
+        <p class:dark={isDark}>
             MySQL, PostgreSQL, DynamoDB, MongoDB, Knex.js, Sequelize, mongoose,
         </p>
         <Heading title={'devops.'} />
-        <p>
+        <p class:dark={isDark}>
             Pulumi, GitHub Actions, GitHub Runners, Docker, Linux Sysadmin,
             Digital Ocean, Netlify, Heroku
         </p>
         <Heading title={'tooling.'} />
-        <p>
+        <p class:dark={isDark}>
             Nx, vite, esBuild, Webpack, jest, vitest, puppeteer, Playwright, git
         </p>
         <Heading title={'iot.'} />
-        <p>Arduino C++, ESP micro-controllers, MQTT, Websockets, Electronics</p>
+        <p class:dark={isDark}>
+            Arduino C++, ESP micro-controllers, MQTT, Websockets, Electronics
+        </p>
         <Heading title={'paradigms.'} />
-        <p>
+        <p class:dark={isDark}>
             Monorepos, Infrastructure as Code, Containerisation and
             Virtualisation, Single Table Design, Serverless, TDD, REST, MVC,
             Agile Development, Working Backwards
         </p>
         <Heading title={'other.'} />
-        <p>
+        <p class:dark={isDark}>
             Solidworks, Fusion 360, Inventor, AutoCAD, Photoshop, InDesign,
             Illustrator
         </p>
@@ -52,7 +62,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--colors-black);
+        /* background-color: var(--colors-black); */
     }
     .skills-container {
         max-width: 800px;
