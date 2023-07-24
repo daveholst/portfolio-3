@@ -65,9 +65,9 @@
     }
 
     p {
-        font-family: var(--fonts-serif);
+        font-family: 'Dosis';
+        font-weight: 200;
         font-size: 1.25rem;
-        line-height: 2rem;
     }
 
     p:first-of-type {

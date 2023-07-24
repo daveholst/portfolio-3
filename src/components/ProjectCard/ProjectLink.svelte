@@ -31,7 +31,7 @@
 
     a {
         margin-right: var(--space-xs);
-        text-decoration: none;
+        /* text-decoration: none; */
         font-family: var(--fonts-mono);
         color: var(--colors-black);
         font-size: var(--fontsize-xs);

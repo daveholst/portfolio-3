@@ -25,7 +25,7 @@
         {/if}
     </div>
 {/each}
-<p>
+<p class="stack">
     <span class="stack-heading">stack::</span>
     <span class="stack-names" class:dark={isDark}>
         {buildStackNames(project.stack)}
@@ -39,8 +39,10 @@
 />
 
 <style>
-    p {
-        font-family: var(--fonts-serif);
+    p:not(.stack) {
+        font-family: 'Dosis';
+        font-weight: 200;
+        font-size: 1.25rem;
     }
 
     .stack-names {
