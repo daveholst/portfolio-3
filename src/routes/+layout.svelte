@@ -16,6 +16,25 @@
 </body>
 
 <style>
+    @font-face {
+        font-family: 'Agave';
+        font-style: normal;
+        font-weight: 100;
+        src: url('fonts/agave_bold.ttf');
+    }
+    @font-face {
+        font-family: 'Agave';
+        src: url('/fonts/agave_bold.ttf');
+        font-style: normal;
+        font-weight: 300;
+    }
+    @font-face {
+        font-family: 'Lora';
+        src: url('/fonts/lora_regular.ttf');
+        font-style: normal;
+        font-weight: 100;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -26,7 +45,6 @@
     body.dark {
         /* Seems like a weird bug in here would let me use a CSS variable in here*/
         background-color: var(--background-dark);
-        background-color: #000;
         transition: background-color 0.5s;
     }
 
@@ -35,6 +53,8 @@
         margin: var(--space-md) var(--space-lg);
         font-family: var(--fonts-mono);
         font-size: var(--fontsize-xs);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: antialiased;
         font-weight: 100;
         line-height: 30px;
         color: var(--text-light);
@@ -53,7 +73,7 @@
         --text-light: #000;
         --text-dark: #fff;
         --background-light: #fff;
-        --background-dark: #000;
+        --background-dark: #02111b;
 
         --space-xs: 0.25rem;
         --space-sm: 0.5rem;
@@ -62,14 +82,15 @@
         --space-lg: 2rem;
         --space-xl: 2.5rem;
 
-        --fontsize-xs: 1rem;
+        --fontsize-xs: 1.1rem;
         --fontsize-sm: 1.25rem;
         --fontsize-md: 1.75rem;
         --fontsize-lg: 1.9rem;
         --fontsize-xl: 2.875rem;
 
         --fonts-sans: Arial, Helvetica, sans-serif;
-        --fonts-serif: 'Times New Roman', Times, serif;
-        --fonts-mono: 'Fira Code', monospace;
+        --fonts-serif: 'Lora', 'Times New Roman', Times, serif;
+        /* --fonts-mono: 'Fira Code', monospace; */
+        --fonts-mono: Agave, arial;
     }
 </style>

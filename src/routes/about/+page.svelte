@@ -64,6 +64,12 @@
         border-right: solid 2px white; */
     }
 
+    p {
+        font-family: var(--fonts-serif);
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
     p:first-of-type {
         margin-top: 100px;
     }
