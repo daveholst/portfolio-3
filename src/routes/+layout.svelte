@@ -35,6 +35,20 @@
         font-weight: 100;
     }
 
+    @font-face {
+        font-family: 'Dosis';
+        src: url('./fonts/dosis_light.ttf');
+        font-style: normal;
+        font-weight: 100;
+    }
+
+    @font-face {
+        font-family: 'Dosis';
+        src: url('./fonts/dosis_book.ttf');
+        font-style: normal;
+        font-weight: 200;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -91,6 +105,7 @@
         --fonts-sans: Arial, Helvetica, sans-serif;
         --fonts-serif: 'Lora', 'Times New Roman', Times, serif;
         /* --fonts-mono: 'Fira Code', monospace; */
+        /* I know this isn't a mono font, dont @ me */
         --fonts-mono: Agave, arial;
     }
 </style>
