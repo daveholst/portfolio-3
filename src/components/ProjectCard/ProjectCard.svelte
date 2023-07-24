@@ -27,7 +27,9 @@
 {/each}
 <p>
     <span class="stack-heading">stack::</span>
-    <span class:dark={isDark}>{buildStackNames(project.stack)}</span>
+    <span class="stack-names" class:dark={isDark}>
+        {buildStackNames(project.stack)}
+    </span>
 </p>
 
 <ProjectLink
@@ -37,6 +39,14 @@
 />
 
 <style>
+    p {
+        font-family: var(--fonts-serif);
+    }
+
+    .stack-names {
+        font-family: var(--fonts-mono);
+    }
+
     .stack-heading {
         font-family: var(--fonts-mono);
         font-weight: 600;
