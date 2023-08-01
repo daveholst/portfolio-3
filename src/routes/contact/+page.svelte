@@ -1,21 +1,15 @@
-<script lang="ts">
+<script>
     import Heading from '../../components/Heading/Heading.svelte'
-    import { theme } from '../../stores/theme'
-
-    let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    import NavBar from '../../components/NavBar/NavBar.svelte'
 </script>
 
+<NavBar />
 <div class="root-container">
     <div class="contact-container">
         <Heading title={'contact.'} />
-        <a class:dark={isDark} href="mailto:contact@daveholst.dev">email.</a>
-        <a class:dark={isDark} href="https://github.com/daveholst">github.</a>
-        <a class:dark={isDark} href="https://www.linkedin.com/in/daveholst/">
-            linkedin.
-        </a>
+        <a href="mailto:contact@daveholst.dev">email.</a>
+        <a href="https://github.com/daveholst">github.</a>
+        <a href="https://www.linkedin.com/in/daveholst/">linkedin.</a>
     </div>
 </div>
 
@@ -26,7 +20,7 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        /* background-color: var(--colors-black); */
+        background-color: var(--colors-black);
         color: var(--colors-white);
     }
 
@@ -45,9 +39,6 @@
         font-family: var(--fonts-sans);
         font-size: var(--fontsize-sm);
         font-weight: 400;
-        color: var(--colors-black);
-    }
-    a.dark {
         color: var(--colors-white);
     }
 
