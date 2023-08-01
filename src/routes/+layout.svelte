@@ -96,7 +96,7 @@
     :root {
         --colors-black: #000;
         --colors-white: #fff;
-        --colors-sage: 219ebc;
+        --colors-sage: #219ebc;
         --colors-pink: #ffb4a2;
 
         --text-light: #000;
