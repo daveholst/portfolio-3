@@ -1,19 +1,22 @@
 <script lang="ts">
-    import NavBar from '../components/NavBar/NavBar.svelte'
+    import { theme } from '../stores/theme'
 
     let growHr = false
+    let isDark: boolean
+    theme.subscribe(value =>
+        value === 'dark' ? (isDark = true) : (isDark = false)
+    )
 
     setTimeout(() => {
         growHr = true
     }, 250)
 </script>
 
-<NavBar />
 <div class="root-container">
     <div class="hero-container">
-        <hr class:grow-hr={growHr} />
-        <h1>dave holst</h1>
-        <span>full stack developer.</span>
+        <hr class:grow-hr={growHr} class:dark={isDark} />
+        <h1 class:dark={isDark}>dave holst </h1>
+        <span class:dark={isDark}>full stack developer.</span>
     </div>
 </div>
 
@@ -24,8 +27,8 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        background-color: var(--colors-black);
-        color: var(--colors-white);
+        /* background-color: var(--colors-black); */
+        /* color: var(--colors-white); */
     }
 
     .hero-container {
@@ -33,13 +36,17 @@
         flex-direction: column;
         width: 330px;
         font-family: var(--fonts-sans);
-        color: var(--colors-white);
+        /* color: var(--colors-white); */
     }
 
     hr {
         margin: 0;
         width: 0%;
         transition: width 2s ease-out;
+    }
+
+    hr.dark {
+        color: var(--colors-white);
     }
 
     .grow-hr {
@@ -52,7 +59,15 @@
         font-size: var(--fontsize-lg);
     }
 
+    h1.dark {
+        color: var(--colors-white);
+    }
+
     span {
         font-size: var(--fontsize-lg);
+    }
+
+    span.dark {
+        color: var(--colors-white);
     }
 </style>
