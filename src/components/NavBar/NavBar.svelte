@@ -86,9 +86,16 @@
     }
 
     .link:hover {
+        text-decoration: overline var(--colors-sage);
+    }
+    .link-dark:hover {
         text-decoration: overline var(--colors-pink);
     }
     .active-link {
+        color: var(--colors-sage);
+        text-decoration: overline var(--colors-sage);
+    }
+    .link-dark.active-link {
         color: var(--colors-pink);
         text-decoration: overline var(--colors-pink);
     }
