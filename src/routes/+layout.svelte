@@ -33,7 +33,7 @@
         font-family: 'Agave';
         font-style: normal;
         font-weight: 100;
-        src: url('fonts/agave_bold.ttf');
+        src: url('/fonts/agave_regular.ttf');
     }
     @font-face {
         font-family: 'Agave';
@@ -50,14 +50,14 @@
 
     @font-face {
         font-family: 'Dosis';
-        src: url('./fonts/dosis_light.ttf');
+        src: url('/fonts/dosis_light.ttf');
         font-style: normal;
         font-weight: 100;
     }
 
     @font-face {
         font-family: 'Dosis';
-        src: url('./fonts/dosis_book.ttf');
+        src: url('/fonts/dosis_book.ttf');
         font-style: normal;
         font-weight: 200;
     }
