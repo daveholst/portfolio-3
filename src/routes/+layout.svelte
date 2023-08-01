@@ -23,9 +23,9 @@
 </script>
 
 <NavBar />
-<body class:dark={isDark}>
+<div class="body-wrapper" class:dark={isDark}>
     <slot />
-</body>
+</div>
 
 <!-- TODO: fix gross elastic white top with this: https://www.tempertemper.net/blog/scroll-bounce-page-background-colour -->
 <style>
@@ -62,14 +62,16 @@
         font-weight: 200;
     }
 
-    body {
+    :global(body) {
         margin: 0;
-        padding: 0;
+        padding: 12;
+    }
+    .body-wrapper {
         background-color: var(--background-light);
         transition: background-color 0.5s;
     }
 
-    body.dark {
+    .body-wrapper.dark {
         /* Seems like a weird bug in here would let me use a CSS variable in here*/
         background-color: var(--background-dark);
         transition: background-color 0.5s;
