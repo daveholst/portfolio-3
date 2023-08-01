@@ -17,7 +17,9 @@
     <div>
         {#if index === 0}
             <p>
-                <span class="stack-heading">description::</span>
+                <span class="stack-heading" class:dark={isDark}>
+                    description::
+                </span>
                 <span class:dark={isDark}>{paragraph}</span>
             </p>
         {:else}
@@ -26,7 +28,7 @@
     </div>
 {/each}
 <p class="stack">
-    <span class="stack-heading">stack::</span>
+    <span class="stack-heading" class:dark={isDark}>stack::</span>
     <span class="stack-names" class:dark={isDark}>
         {buildStackNames(project.stack)}
     </span>
@@ -52,6 +54,9 @@
     .stack-heading {
         font-family: var(--fonts-mono);
         font-weight: 600;
+        color: var(--colors-sage);
+    }
+    .stack-heading.dark {
         color: var(--colors-pink);
     }
     .dark {

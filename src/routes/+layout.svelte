@@ -1,13 +1,25 @@
 <script lang="ts">
+    import { onMount } from 'svelte'
     import NavBar from '../components/NavBar/NavBar.svelte'
     import { theme } from '../stores/theme'
     // TODO whack a store in here for theme
     // maybe something like this the OS detection + overwrite + local storage
     // https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7
+
     let isDark: boolean
+
     theme.subscribe(value =>
         value === 'dark' ? (isDark = true) : (isDark = false)
     )
+    //TODO this causes a jank flash, seems to be a few hacks to fix it.
+    // onMount(() => {
+    //     const isBrowserDarkMode =
+    //         window.matchMedia &&
+    //         window.matchMedia('(prefers-color-scheme: dark)').matches
+    //     if (!isBrowserDarkMode) {
+    //         theme.set('dark')
+    //     }
+    // })
 </script>
 
 <NavBar />
@@ -15,6 +27,7 @@
     <slot />
 </body>
 
+<!-- TODO: fix gross elastic white top with this: https://www.tempertemper.net/blog/scroll-bounce-page-background-colour -->
 <style>
     @font-face {
         font-family: 'Agave';
@@ -81,7 +94,7 @@
     :root {
         --colors-black: #000;
         --colors-white: #fff;
-        --colors-sage: #83c5be;
+        --colors-sage: 219ebc;
         --colors-pink: #ffb4a2;
 
         --text-light: #000;
