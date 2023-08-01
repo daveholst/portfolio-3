@@ -36,9 +36,3 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Dave Notes
-### TODO
--[ ] darkmode toggle - changes text color and background colour
--[ ] darkmode toggle autoset off OS preferences - no glitch plz
--[ ] darkmode last used pref is saved to localStorage
