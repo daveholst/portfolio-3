@@ -5,12 +5,13 @@
     "semi": false,
     "singleQuote": true,
     "arrowParens": "avoid",
+    "htmlWhitespaceSensitivity": "ignore",
     "overrides": [
         {
-          "files": "*.yaml",
-          "options": {
-            "tabWidth": 2
-        }
+            "files": "*.yaml",
+            "options": {
+                "tabWidth": 2
+            }
         }
     ]
 }
