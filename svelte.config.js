@@ -1,6 +1,6 @@
 // import adapter from '@sveltejs/adapter-auto'
 import preprocess from 'svelte-preprocess'
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-vercel'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,10 +11,11 @@ const config = {
         adapter: adapter({
             // default options are shown. On some platforms
             // these options are set automatically — see below
-            pages: 'build',
-            assets: 'build',
+            runtime: 'edge',
+            // pages: 'build',
+            // assets: 'build',
             fallback: 'index.html',
-            precompress: false,
+            precompress: true,
             strict: true,
         }),
     },
