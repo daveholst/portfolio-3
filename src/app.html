@@ -8,22 +8,17 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <link rel="preload" as="image" href='images/headshot-sml.jpeg' />
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Preload headshot -->
+        <link rel="preload" as="image" href='images/headshot-sml.jpeg' />
+        <!-- Preload self hosted fonts -->
+        <link rel="preload" as="font" href="fonts/dosis_book.ttf">
+        <link rel="preload" as="font" href="fonts/agave_regular.ttf">
+        <link rel="preload" as="font" href="fonts/agave_bold.ttf">
         <!-- LogRocket Monitoring -->
         <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
         <script>window.LogRocket?.init('kzxwx3/portfolio-3');</script>
         %sveltekit.head%
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9C6FXTBN1"></script> -->
-        <!-- <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Z9C6FXTBN1');
-        </script> -->
     </head>
     <body>
         <div>%sveltekit.body%</div>
