@@ -5,6 +5,10 @@
     // TODO whack a store in here for theme
     // maybe something like this the OS detection + overwrite + local storage
     // https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7
+    import { dev } from '$app/environment'
+    import { inject } from '@vercel/analytics'
+    // Vercel analytics: https://vercel.com/docs/concepts/analytics/quickstart
+    inject({ mode: dev ? 'development' : 'production' })
 
     let isDark: boolean
 
