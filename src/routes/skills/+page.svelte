@@ -12,30 +12,32 @@
     <div class="skills-container">
         <Heading title={'languages.'} />
         <p class:dark={isDark}>
-            TypeScript, JavaScript, CSS 3, HTML 5, SQL, Arduino C++, YAML, Basic
-            Python
+            TypeScript, JavaScript, Python, CSS 3, HTML 5, SQL, Arduino C++,
+            YAML
         </p>
         <Heading title={'frontend.'} />
         <p class:dark={isDark}>
-            React, Remix, Svelte, SvelteKit, Express, handlebars, Redux,
-            MaterialUI, Chaklra, Bulma, bootstrap
+            React, Remix, next, Svelte, SvelteKit, Express, handlebars, Redux,
+            MaterialUI, Tailwind, Flowbite ,Chakra, Bulma, bootstrap
         </p>
         <Heading title={'backend.'} />
         <p class:dark={isDark}>
-            node.js, Express, Fastify, aws-sdk, graphQL, REST apis
+            node.js, Express, Fastify, Django, aws-sdk, graphQL, DRF, REST apis
         </p>
         <Heading title={'databases.'} />
         <p class:dark={isDark}>
-            MySQL, PostgreSQL, DynamoDB, MongoDB, Knex.js, Sequelize, mongoose,
+            MySQL, PostgreSQL, DynamoDB, MongoDB, Knex.js, Sequelize, Django
+            ORM, mongoose
         </p>
         <Heading title={'devops.'} />
         <p class:dark={isDark}>
-            Pulumi, GitHub Actions, GitHub Runners, Docker, Linux Sysadmin,
-            Digital Ocean, Netlify, Heroku
+            Pulumi, AWS CDK, GitHub Actions, GitHub Runners, Docker, Linux
+            Sysadmin, Digital Ocean, Netlify, Heroku, Vercel
         </p>
         <Heading title={'tooling.'} />
         <p class:dark={isDark}>
-            Nx, vite, esBuild, Webpack, jest, vitest, puppeteer, Playwright, git
+            Nx, vite, esBuild, Webpack, storybook, chromatic, jest, vitest,
+            puppeteer, Playwright, git
         </p>
         <Heading title={'iot.'} />
         <p class:dark={isDark}>

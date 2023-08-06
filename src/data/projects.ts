@@ -9,11 +9,31 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: 'last yard.',
+        description: [
+            'As a Product Engineer, I was responsible for overseeing the retail marketing platform in its entirety. This involved utilising a React frontend served from Django to provide cutting-edge signage and marketing solutions for leading retailers in Australia.',
+            'In my role, I collaborate closely with designers to implement both frontend and backend solutions for both existing features and new enhancements. Additionally, I frequently provide on-call support to the platform team, ensuring the smooth functioning of the infrastructure.',
+        ],
+        stack: [
+            'Python',
+            'Django',
+            'Typescript',
+            'React',
+            'Tailwind',
+            'StoryBook',
+            'Docker Swarm',
+            'RabbitMQ',
+            'Celery',
+            'AWS Services',
+        ],
+        live: 'https://lastyard.com/',
+    },
+    {
         title: 'seven west media.',
         description: [
-            'during my day job as a Full Stack Developer at Seven West Media, I primarily work on a collection of both mono and traditional repos that serve thewest.com.au, sevennews.com.au, perthnow.com.au and their supporting publishing pipelines. Our front end is an SSR / SPA hybrid app with a custom JSON layout routing engine for simple modifications to page layouts. Components are shared across all 3 news sites with an Emotion based design token systems to help appropriately style the components.',
+            'during my day job as a Full Stack Developer at Seven West Media, I primarily worked on a collection of both mono and traditional repos that serve thewest.com.au, sevennews.com.au, perthnow.com.au and their supporting publishing pipelines. Our front was an SSR / SPA hybrid app with a custom JSON layout routing engine for simple modifications to page layouts. Components are shared across all 3 news sites with an Emotion based design token system to help appropriately style the components.',
 
-            'The publishing pipeline has a range of services running on ec2 instances through to event driven serverless microservices running on both regional and lambdas@edge.',
+            'The publishing pipeline has a range of services running on ec2 instances through to event driven serverless microservices running primarily on lambdas',
             'These mastheads and supporting services deliver to over 1m unique users daily. It is an efficient architecture that focus on ephemeral serverless architecture to keep costs down and scale under periods of heavy traffic.',
         ],
         stack: [
@@ -33,8 +53,7 @@ export const projects: Project[] = [
         title: 'url shortener.',
         description: [
             'this project was a proof of concept to get a remix app to work on a vanilla AWS serverless based stack orchestrated via Pulumi. Remix is providing SSR via a lambda to the cloudfront instance. Cloudfront is routing static data from an s3 bucket and requesting new content from the lambda on expired cache headers. ',
-
-            'An adapter does not currently exist for running remix in a vanilla AWS Lambda. This project leverages the architects event adapter that takes the lambda event and re-shapes it to the expected request shape Remix uses. Short, hashed URLs are stored with their corresponding full address in a dynamo table',
+            'An adapter did not exist for running remix in a vanilla AWS Lambda. This project leverages the architects event adapter that takes the lambda event and re-shapes it to the expected request shape Remix uses. Short, hashed URLs are stored with their corresponding full address in a dynamo table',
         ],
         stack: [
             'TypeScript',
