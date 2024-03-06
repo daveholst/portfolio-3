@@ -18,7 +18,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* background-color: var(--colors-black); */
     }
     .projects-container {
         max-width: 800px;

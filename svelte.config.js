@@ -12,6 +12,12 @@ const config = {
             runtime: 'edge',
         }),
     },
+    alias: {
+        "$types/*": "./src/types/*",
+        "$lib/*": "./src/lib/*",
+        "$components/*": "./src/components/*",
+        "$images/*": "./static/images/",
+    }
 }
 
 export default config

@@ -2,6 +2,7 @@ export interface Project {
     title: string
     description: string[]
     stack: string[]
+    keyAchievements?: string[],
     github?: string
     live?: string
     video?: string
@@ -11,8 +12,16 @@ export const projects: Project[] = [
     {
         title: 'last yard.',
         description: [
-            'As a Product Engineer, I was responsible for overseeing the retail marketing platform in its entirety. This involved utilising a React frontend served from Django to provide cutting-edge signage and marketing solutions for leading retailers in Australia.',
-            'In my role, I collaborate closely with designers to implement both frontend and backend solutions for both existing features and new enhancements. Additionally, I frequently provide on-call support to the platform team, ensuring the smooth functioning of the infrastructure.',
+            'As a Product Engineer at Last Yard, I actively worked on all facets of the comprehensive retail marketing platform. I participated in the creation of a customer-facing React frontend, which was served from a Django backend, delivering innovative signage and marketing solutions for top-tier retailers across Australia.',
+            'The platform I worked on played a pivotal role in transforming the retail environment by revolutionizing the way retailers communicate with their customers in-store. It provided a seamless and dynamic marketing experience, enabling retailers to change their store signage and marketing messages with agility and precision.',
+            'My role required a high degree of collaboration with designers and other team members. We worked together to implement frontend and backend solutions for both existing features and new enhancements. This task involved a lot of problem-solving and required me to stay updated with current trends and technologies.',
+            'Apart from development tasks, I also often provided on-call support to the platform team. This involved troubleshooting issues, optimizing performance, and ensuring the smooth operation of the platform infrastructure. The experience has honed my skills in problem-solving, communication, and working under pressure.'
+        ],
+        keyAchievements: [
+            'Responding to on-call support requests and troubleshooting issues to ensure the smooth operation of the platform infrastructure.',
+            'Developing MVP for a custom node driven no-code programmer for client to building product pricing algorithms.',
+            'Developed a new Design System with modern technologies with both visual regression and accessibility testing.',
+            'Rewrote frontend to meet WCAG guidelines and achieve certification.'
         ],
         stack: [
             'Python',

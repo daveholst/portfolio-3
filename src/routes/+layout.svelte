@@ -6,8 +6,8 @@
     // maybe something like this the OS detection + overwrite + local storage
     // https://svelte.dev/repl/15a88f72670845b4a173bc558fd537f9?version=3.29.7
     import { dev } from '$app/environment'
-    import { inject } from '@vercel/analytics'
     // Vercel analytics: https://vercel.com/docs/concepts/analytics/quickstart
+    import { inject } from '@vercel/analytics'
     inject({ mode: dev ? 'development' : 'production' })
 
     let isDark: boolean
@@ -66,6 +66,11 @@
         font-weight: 200;
     }
 
+    @font-face {
+        font-family: 'Argon';
+        src: url('/fonts/monaspace_argon.woff2');
+    }
+
     :global(body) {
         margin: 0;
         padding: 12;
@@ -88,13 +93,14 @@
         font-size: var(--fontsize-xs);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: antialiased;
-        font-weight: 100;
-        line-height: 30px;
+        font-weight: 300;
+        line-height: 38px;
         color: var(--text-light);
     }
 
     :global(p.dark) {
         color: var(--text-dark);
+        font-weight: 100;
     }
     /* Global Tokens */
     :root {
@@ -115,7 +121,7 @@
         --space-lg: 2rem;
         --space-xl: 2.5rem;
 
-        --fontsize-xs: 1.1rem;
+        --fontsize-xs: 0.9rem;
         --fontsize-sm: 1.25rem;
         --fontsize-md: 1.75rem;
         --fontsize-lg: 1.9rem;
@@ -125,6 +131,7 @@
         --fonts-serif: 'Lora', 'Times New Roman', Times, serif;
         /* --fonts-mono: 'Fira Code', monospace; */
         /* I know this isn't a mono font, dont @ me */
-        --fonts-mono: Agave, arial;
+        /* --fonts-mono: Agave, arial; */
+        --fonts-mono: 'Argon', monospace;
     }
 </style>

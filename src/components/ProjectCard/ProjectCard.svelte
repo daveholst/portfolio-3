@@ -17,9 +17,9 @@
     <div>
         {#if index === 0}
             <p>
-                <span class="stack-heading" class:dark={isDark}>
+                <!-- <span class="stack-heading" class:dark={isDark}>
                     description::
-                </span>
+                </span> -->
                 <span class:dark={isDark}>{paragraph}</span>
             </p>
         {:else}
@@ -27,8 +27,21 @@
         {/if}
     </div>
 {/each}
+{#if project.keyAchievements}
+    <p class="stack">
+        <span class="project-subheading" class:dark={isDark}>
+            achievements.
+        </span>
+    </p>
+    <ul>
+        {#each project.keyAchievements as achievement}
+            <li class:dark={isDark}>{achievement}</li>
+        {/each}
+    </ul>
+{/if}
 <p class="stack">
-    <span class="stack-heading" class:dark={isDark}>stack::</span>
+    <span class="project-subheading" class:dark={isDark}>stack.</span>
+    <br />
     <span class="stack-names" class:dark={isDark}>
         {buildStackNames(project.stack)}
     </span>
@@ -41,22 +54,27 @@
 />
 
 <style>
-    p:not(.stack) {
-        font-family: 'Dosis';
+    li {
+        font-family: var(--fonts-mono);
+        /* font-family: 'Dosis'; */
         font-weight: 200;
-        font-size: 1.25rem;
+        font-size: var(--fontsize-xs);
+        line-height: 40px;
+        list-style: square;
     }
 
     .stack-names {
         font-family: var(--fonts-mono);
     }
 
-    .stack-heading {
-        font-family: var(--fonts-mono);
-        font-weight: 600;
+    .project-subheading {
         color: var(--colors-sage);
+        font-family: var(--fonts-mono);
+        font-style: italic;
+        font-size: var(--fontsize-sm);
+        font-weight: 600;
     }
-    .stack-heading.dark {
+    .project-subheading.dark {
         color: var(--colors-pink);
     }
     .dark {
