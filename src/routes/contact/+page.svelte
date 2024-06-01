@@ -3,9 +3,7 @@
     import { theme } from '../../stores/theme'
 
     let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
 </script>
 
 <div class="root-container">
@@ -13,9 +11,7 @@
         <Heading title={'contact.'} />
         <a class:dark={isDark} href="mailto:contact@daveholst.dev">email.</a>
         <a class:dark={isDark} href="https://github.com/daveholst">github.</a>
-        <a class:dark={isDark} href="https://www.linkedin.com/in/daveholst/">
-            linkedin.
-        </a>
+        <a class:dark={isDark} href="https://www.linkedin.com/in/daveholst/">linkedin.</a>
     </div>
 </div>
 
@@ -26,7 +22,6 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        /* background-color: var(--colors-black); */
         color: var(--colors-white);
     }
 

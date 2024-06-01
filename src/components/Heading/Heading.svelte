@@ -2,15 +2,14 @@
     import { theme } from '../../stores/theme'
 
     export let title: string
-
+    let isDark: boolean
     let growHr = false
+
     setTimeout(() => {
         growHr = true
     }, 250)
-    let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
 </script>
 
 <div class="heading-container">
@@ -21,7 +20,7 @@
 <style>
     .heading-container {
         max-width: 350px;
-        margin-left: var(--space-md);
+        margin-bottom: var(--space-md);
         display: flex;
         flex-direction: column;
         font-family: var(--fonts-sans);

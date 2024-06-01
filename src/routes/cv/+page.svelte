@@ -3,9 +3,7 @@
     import { theme } from '../../stores/theme'
 
     let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
 </script>
 
 <div class="root-container">
@@ -28,7 +26,6 @@
         justify-content: center;
         height: 100vh;
         width: 100vw;
-        /* background-color: var(--colors-black); */
         color: var(--colors-white);
     }
 

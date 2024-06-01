@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" style="overscroll-behavior: none">
     <head>
         <meta charset="utf-8" />
-        <meta name="description" content="Personal folio for full stack developer Dave Holst">
+        <meta name="description" content="Personal folio for full stack developer Dave Holst" />
         <title>daveholst.dev | portfolio</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Preload headshot -->
-        <link rel="preload" as="image" href='images/headshot-sml.jpeg' />
+        <!-- Preload head shot -->
+        <link rel="preload" as="image" href="images/headshot-sml.jpeg" />
         <!-- Preload self hosted fonts -->
-        <link rel="preload" as="font" href="fonts/dosis_book.ttf" crossorigin>
-        <link rel="preload" as="font" href="fonts/agave_regular.ttf" crossorigin>
-        <link rel="preload" as="font" href="fonts/agave_bold.ttf" crossorigin>
+        <link rel="preload" as="font" href="fonts/semi_var.woff2" crossorigin />
         <!-- LogRocket Monitoring -->
         <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
-        <script>window.LogRocket?.init('kzxwx3/portfolio-3');</script>
+        <script>
+            window.LogRocket?.init('kzxwx3/portfolio-3')
+        </script>
         %sveltekit.head%
     </head>
     <body>
-        <div>%sveltekit.body%</div>
+        %sveltekit.body%
     </body>
 </html>

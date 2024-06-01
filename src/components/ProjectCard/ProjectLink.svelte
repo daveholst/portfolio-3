@@ -6,9 +6,7 @@
     export let video: string | undefined
 
     let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
 </script>
 
 <div class="links-container">
@@ -26,17 +24,17 @@
 <style>
     .links-container {
         /* margin: var(--space-md) var(--space-lg) var(--space-lg); */
-        margin: var(--space-md) var(--space-lg) var(--space-lg);
+        /* margin-top: var(--space-md); */
+        margin-bottom: var(--space-xl);
     }
 
     a {
         margin-right: var(--space-xs);
-        /* text-decoration: none; */
-        color: var(--colors-black);
+        text-decoration: none;
         font-family: var(--fonts-mono);
-        font-style: italic;
-        font-size: var(--fontsize-sm);
-        font-weight: 600;
+        font-size: var(--fontsize-xs);
+        font-weight: 400;
+        color: var(--colors-black);
     }
 
     a.dark {
@@ -44,11 +42,10 @@
     }
 
     a:hover {
-        color: var(--colors-pink);
-        border-bottom: 1px solid var(--colors-pink);
+        text-decoration: underline var(--colors-sage);
     }
 
     a.dark:hover {
-        border-bottom: 1px solid var(--colors-white);
+        text-decoration: underline var(--colors-pink);
     }
 </style>

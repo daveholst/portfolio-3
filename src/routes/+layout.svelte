@@ -12,9 +12,7 @@
 
     let isDark: boolean
 
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
     //TODO this causes a jank flash, seems to be a few hacks to fix it.
     // onMount(() => {
     //     const isBrowserDarkMode =
@@ -31,7 +29,6 @@
     <slot />
 </div>
 
-<!-- TODO: fix gross elastic white top with this: https://www.tempertemper.net/blog/scroll-bounce-page-background-colour -->
 <style>
     @font-face {
         font-family: 'Agave';
@@ -71,9 +68,15 @@
         src: url('/fonts/monaspace_argon.woff2');
     }
 
+    @font-face {
+        font-family: 'semi_var';
+        src: url('/fonts/semi_var.woff2');
+    }
+
     :global(body) {
         margin: 0;
-        padding: 12;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: antialiased;
     }
     .body-wrapper {
         background-color: var(--background-light);
@@ -81,18 +84,18 @@
     }
 
     .body-wrapper.dark {
-        /* Seems like a weird bug in here would let me use a CSS variable in here*/
         background-color: var(--background-dark);
         transition: background-color 0.5s;
     }
 
+    .body-wrapper > * {
+        max-width: 800px;
+    }
+
     :global(p) {
-        max-width: 700px;
-        margin: var(--space-md) var(--space-lg);
         font-family: var(--fonts-mono);
         font-size: var(--fontsize-xs);
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: antialiased;
+
         font-weight: 300;
         line-height: 38px;
         color: var(--text-light);
@@ -121,7 +124,7 @@
         --space-lg: 2rem;
         --space-xl: 2.5rem;
 
-        --fontsize-xs: 0.9rem;
+        --fontsize-xs: 1rem;
         --fontsize-sm: 1.25rem;
         --fontsize-md: 1.75rem;
         --fontsize-lg: 1.9rem;
@@ -132,6 +135,6 @@
         /* --fonts-mono: 'Fira Code', monospace; */
         /* I know this isn't a mono font, dont @ me */
         /* --fonts-mono: Agave, arial; */
-        --fonts-mono: 'Argon', monospace;
+        --fonts-mono: 'semi_var', arial, monospace;
     }
 </style>

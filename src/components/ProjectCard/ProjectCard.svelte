@@ -7,72 +7,69 @@
 
     export let project: Project
     let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
 </script>
 
 <Heading title={project.title} />
+
 {#each project.description as paragraph, index}
-    <div>
-        {#if index === 0}
-            <p>
-                <!-- <span class="stack-heading" class:dark={isDark}>
-                    description::
-                </span> -->
-                <span class:dark={isDark}>{paragraph}</span>
-            </p>
-        {:else}
-            <p class:dark={isDark}>{paragraph}</p>
-        {/if}
-    </div>
+    <p class:dark={isDark}>{paragraph}</p>
+    <br />
 {/each}
+
 {#if project.keyAchievements}
-    <p class="stack">
-        <span class="project-subheading" class:dark={isDark}>
-            achievements.
-        </span>
-    </p>
+    <h2 class="project-subheading" class:dark={isDark}>achievements.</h2>
     <ul>
         {#each project.keyAchievements as achievement}
             <li class:dark={isDark}>{achievement}</li>
         {/each}
     </ul>
 {/if}
-<p class="stack">
-    <span class="project-subheading" class:dark={isDark}>stack.</span>
-    <br />
-    <span class="stack-names" class:dark={isDark}>
-        {buildStackNames(project.stack)}
-    </span>
+<h2 class="project-subheading" class:dark={isDark}>stack.</h2>
+<p class="stack-names" class:dark={isDark}>
+    {buildStackNames(project.stack)}
 </p>
+<h2 class="project-subheading" class:dark={isDark}>links.</h2>
 
-<ProjectLink
-    github={project.github}
-    live={project.live}
-    video={project.video}
-/>
+<ProjectLink github={project.github} live={project.live} video={project.video} />
 
 <style>
+    p {
+        /* padding: 0; */
+        margin: 0;
+    }
+    h2 {
+        /* padding-left: var(--space-md); */
+        padding-top: var(--space-lg);
+    }
+    ul {
+        padding: 0;
+    }
     li {
         font-family: var(--fonts-mono);
         /* font-family: 'Dosis'; */
-        font-weight: 200;
+        font-weight: 300;
         font-size: var(--fontsize-xs);
-        line-height: 40px;
-        list-style: square;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        line-height: 32px;
+        list-style: none;
+        border-bottom: 1px solid #ccc; /* Add bottom border */
     }
 
-    .stack-names {
-        font-family: var(--fonts-mono);
+    li:first-of-type {
+        border-top: 1px solid #ccc; /* Add bottom border */
     }
 
     .project-subheading {
-        color: var(--colors-sage);
-        font-family: var(--fonts-mono);
-        font-style: italic;
+        margin-top: var(--space-xl);
+        margin-bottom: var(--space-md);
+        color: var(--colors-black);
+        font-family: var(--fonts-sans);
+        /* font-style: italic; */
         font-size: var(--fontsize-sm);
-        font-weight: 600;
+        font-weight: 500;
+        letter-spacing: 0.5px;
     }
     .project-subheading.dark {
         color: var(--colors-pink);

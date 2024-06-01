@@ -14,6 +14,7 @@
 <style>
     .root-container {
         min-height: 100vh;
+        padding: 20px;
         padding-top: 100px;
         display: flex;
         flex-direction: column;
