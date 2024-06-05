@@ -18,28 +18,27 @@
 {/each}
 
 {#if project.keyAchievements}
-    <h2 class="project-subheading" class:dark={isDark}>achievements.</h2>
+    <h2 class="project-subheading" class:dark={isDark}>highlights.</h2>
     <ul>
         {#each project.keyAchievements as achievement}
             <li class:dark={isDark}>{achievement}</li>
         {/each}
     </ul>
 {/if}
+
 <h2 class="project-subheading" class:dark={isDark}>stack.</h2>
 <p class="stack-names" class:dark={isDark}>
     {buildStackNames(project.stack)}
 </p>
-<h2 class="project-subheading" class:dark={isDark}>links.</h2>
 
+<h2 class="project-subheading" class:dark={isDark}>links.</h2>
 <ProjectLink github={project.github} live={project.live} video={project.video} />
 
 <style>
     p {
-        /* padding: 0; */
         margin: 0;
     }
     h2 {
-        /* padding-left: var(--space-md); */
         padding-top: var(--space-lg);
     }
     ul {
@@ -47,18 +46,17 @@
     }
     li {
         font-family: var(--fonts-mono);
-        /* font-family: 'Dosis'; */
         font-weight: 300;
         font-size: var(--fontsize-xs);
         padding-top: 2px;
         padding-bottom: 2px;
         line-height: 32px;
         list-style: none;
-        border-bottom: 1px solid #ccc; /* Add bottom border */
+        border-bottom: 1px solid #ccc;
     }
 
     li:first-of-type {
-        border-top: 1px solid #ccc; /* Add bottom border */
+        border-top: 1px solid #ccc;
     }
 
     .project-subheading {
@@ -66,7 +64,6 @@
         margin-bottom: var(--space-md);
         color: var(--colors-black);
         font-family: var(--fonts-sans);
-        /* font-style: italic; */
         font-size: var(--fontsize-sm);
         font-weight: 500;
         letter-spacing: 0.5px;
