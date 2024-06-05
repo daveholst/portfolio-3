@@ -109,13 +109,13 @@
     :root {
         --colors-black: #000;
         --colors-white: #fff;
-        --colors-sage: #219ebc;
+        --colors-sage: #0f766e;
         --colors-pink: #ffb4a2;
 
         --text-light: #000;
         --text-dark: #fff;
-        --background-light: #fff;
-        --background-dark: #02111b;
+        --background-light: #e2e8f0; /* slate-200 */
+        --background-dark: #0f172a; /* slate-800 */
 
         --space-xs: 0.25rem;
         --space-sm: 0.5rem;

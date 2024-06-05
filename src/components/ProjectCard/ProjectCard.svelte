@@ -62,10 +62,11 @@
     .project-subheading {
         margin-top: var(--space-xl);
         margin-bottom: var(--space-md);
-        color: var(--colors-black);
+        color: var(--colors-sage);
         font-family: var(--fonts-sans);
         font-size: var(--fontsize-sm);
         font-weight: 500;
+        text-decoration: underline;
         letter-spacing: 0.5px;
     }
     .project-subheading.dark {
