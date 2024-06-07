@@ -3,9 +3,7 @@
 
     let growHr = false
     let isDark: boolean
-    theme.subscribe(value =>
-        value === 'dark' ? (isDark = true) : (isDark = false)
-    )
+    theme.subscribe(value => (value === 'dark' ? (isDark = true) : (isDark = false)))
 
     setTimeout(() => {
         growHr = true
