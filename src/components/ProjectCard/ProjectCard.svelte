@@ -46,13 +46,17 @@
     }
     li {
         font-family: var(--fonts-mono);
-        font-weight: 300;
+        font-weight: 400;
         font-size: var(--fontsize-xs);
         padding-top: 2px;
         padding-bottom: 2px;
         line-height: 32px;
         list-style: none;
         border-bottom: 1px solid #ccc;
+    }
+
+    li.dark {
+        font-weight: 300;
     }
 
     li:first-of-type {

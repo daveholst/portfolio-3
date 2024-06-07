@@ -12,10 +12,10 @@ export const projects: Project[] = [
     {
         title: 'Woodside Energy.',
         description: [
-            "At Woodside Energy I was employed as a contract Software Engineer, primarily working on the Internal Developer Platform. This including working on both the infrastructure and tooling that enabled quick 'time to market' for our internal project teams.",
-            'The platform was built using a microservices architecture residing on a range of AWS infrastructure services. I was responsible for developing new features and enhancements to the platform, as well as providing support and maintenance. I also worked on a range of refactor tasks with a focus on improving the developer experience, simplicity and performance of the system.',
+            "At Woodside Energy I was employed as a contract Software Engineer, primarily working on the Internal Developer Platform. This included working on both the infrastructure and tooling that enabled quick 'time to market' for our internal project teams.",
+            'The platform was built using a microservices architecture residing on a range of AWS infrastructure. I was responsible for developing new features and enhancements to the platform, as well as providing support and maintenance. I also worked on a range of refactor tasks with a focus on improving the developer experience, simplicity and performance of the system.',
             "Compliance and governance were a key focus of the platform, our team was responsible for surfacing potential security concerns for other development teams that were using our 'Cloud Native Factory' products . This involved the continual development and refinement of new and existing products, documenting the systems and best practices, providing examples and building backend services to provide automated checks on deployed applications.",
-            'My role at Woodside Energy required me to work closely with others in a small team. I collaborated with them to develop new features, fix bugs, and optimize performance. As we had two Graduate Engineers on the team, I also provided mentorship and guidance to help them grow their skills and knowledge.',
+            'My role at Woodside Energy required me to work closely with others in a small team. I collaborated with them to develop new features, fix bugs, and optimise performance. As we had two Graduate Engineers on the team, I also provided mentorship and guidance to help them grow their skills and knowledge.',
         ],
         keyAchievements: [
             'Developed an aggregation system for recording long-term metrics on product deployments, compliance and governance.',

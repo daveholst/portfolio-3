@@ -77,6 +77,8 @@
         margin: 0;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: antialiased;
+        /* TODO - work out how to hook this into a dark mode toggle. It has to be simple xD */
+        background-color: var(--background-dark);
     }
     .body-wrapper {
         background-color: var(--background-light);
@@ -103,7 +105,7 @@
 
     :global(p.dark) {
         color: var(--text-dark);
-        font-weight: 100;
+        font-weight: 200;
     }
     /* Global Tokens */
     :root {
@@ -114,6 +116,7 @@
 
         --text-light: #000;
         --text-dark: #fff;
+
         --background-light: #e2e8f0; /* slate-200 */
         --background-dark: #0f172a; /* slate-800 */
 
@@ -124,7 +127,7 @@
         --space-lg: 2rem;
         --space-xl: 2.5rem;
 
-        --fontsize-xs: 1rem;
+        --fontsize-xs: 1.1rem;
         --fontsize-sm: 1.25rem;
         --fontsize-md: 1.75rem;
         --fontsize-lg: 1.9rem;
@@ -132,9 +135,6 @@
 
         --fonts-sans: Arial, Helvetica, sans-serif;
         --fonts-serif: 'Lora', 'Times New Roman', Times, serif;
-        /* --fonts-mono: 'Fira Code', monospace; */
-        /* I know this isn't a mono font, dont @ me */
-        /* --fonts-mono: Agave, arial; */
         --fonts-mono: 'semi_var', arial, monospace;
     }
 </style>
